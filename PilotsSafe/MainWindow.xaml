@@ -1,0 +1,22 @@
+﻿<Window x:Class="PilotsSafe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PilotsSafe"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <ToolBar Height="25" VerticalAlignment="Top">
+            <TextBox x:Name="TextBox1" KeyDown="TextBox_KeyDown" GotKeyboardFocus="TextBox1_GotKeyboardFocus" LostKeyboardFocus="TextBox1_LostKeyboardFocus" PreviewTextInput="NumberValidationTextBox" Foreground="DimGray" Width="180"></TextBox>
+        </ToolBar>
+        <ScrollViewer Margin="0 25 0 0"  Height="Auto" Width="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" >
+            
+            <Grid x:Name="Grid1" ShowGridLines="True">
+
+            </Grid>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
